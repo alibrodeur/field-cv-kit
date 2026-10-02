@@ -1,0 +1,14 @@
+[Unit]
+Description=MediaMTX RTSP-to-HLS Relay Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=volpe
+WorkingDirectory=/home/volpe
+ExecStart=/home/volpe/mediamtx /home/volpe/mediamtx.yml
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
