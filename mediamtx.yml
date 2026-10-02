@@ -1,0 +1,3 @@
+paths:
+  cam:
+    source: rtsp://YOUR_USER:YOUR_PASSWORD@YOUR_CAMERA_IP:554/live1s2.sdp
